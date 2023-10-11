@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+  </head>
+  <body>
+<!--pure web page as a div-->
+    <div class="container">
+
+      <h1>Password Generator</h1>
+      <!-- password generate ho raha hai jhaa pr wo wala div -->
+      <div class="display-container">
+
+        <input readonly placeholder="Password" clas="display" data-passwordDisplay />
+
+        <button data-copy>
+
+          <span data-copyMsg></span>
+          <img src="./assets/copy.svg" alt="copy" width="23" height="23" />
+
+        </button>
+
+      </div>
+      
+      <!-- length show ho rahi hai jha pr wo wala div -->
+      <div class="input-container">
+       
+        <div class="length-container">
+        <p>Password Length</p>
+        <p data-lengthNumber>0</p>
+
+        </div>
+        
+<!--slider-->
+        <input type="range" min="1" max="20" class="slider" step="1"  data-lengthSlider>
+
+        <!--checkboxes-->
+        <div>
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Includes Uppercase Letters</label>
+        </div>
+
+       
+        <div>
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Includes lowercase Letters</label>
+        </div>
+
+
+        <div>
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Includes Numbers </label>
+        </div>
+
+
+        <div>
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Includes Symbols </label>
+        </div>
+
+
+    <!--strength section-->
+    <div class="strength-container">
+        <p><b>Strength</b></p>
+        <div data-indicator></div>
+    </div>
+
+
+
+
+    <!--generate password button-->
+
+    <button class="generateButton">Generate Password</button>
+
+
+
+
+
+      </div>
+
+    </div>
+    
+    <script src="script2.js"></script>
+  </body>
+</html>

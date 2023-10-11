@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f06, #9c0);
+    background-size: cover;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .display-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .display {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #0069d9;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button-container button:hover {
+    background-color: #0050a5;
+  }
+  
+  /* New styles for active copy button */
+  [data-copyMsg].active {
+    color: green;
+    transition: color 0.5s ease-in-out;
+  }
+  
+  /* Rest of your styling */
+  /* ... */
+  
